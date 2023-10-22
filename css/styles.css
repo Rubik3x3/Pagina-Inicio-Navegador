@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+body {
+    background: -webkit-gradient(linear, left bottom, right top, from(#050505), to(#252525)) fixed;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 0px solid #ff0022;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: #252525;
+}
+
+.container__button {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: #ff207d;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+    -webkit-box-shadow: 0px 0px 20px 0px #ff207d;
+    -moz-box-shadow: 0px 0px 20px 0px #ff207d;
+    box-shadow: 0px 0px 20px 0px #ff207d;
+}
+
+.container__button i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.container:hover div{
+    background-color: #6432ec;
+    -webkit-box-shadow: 0px 0px 10px 0px #6432ec;
+    -moz-box-shadow: 0px 0px 10px 0px #6432ec;
+    box-shadow: 0px 0px 10px 0px #6432ec;
+}
+
+.container:hover input {
+	width: 500px;
+}
+
+.container:hover i{
+	transform: rotate(-360deg);
+}
