@@ -11,10 +11,25 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" placeholder="Buscar">
-        <div class="container__button">
-            <i class="fa fa-search"></i>
-        </div>
+        <form action="https://google.com/search" target="_blank" type="GET">
+            <input type="search" placeholder="Buscar" name="q" id="input-search">
+            <div class="container__button">
+                <i class="fa fa-search"></i>
+            </div>        
+        </form>        
     </div>
+
+    <script>
+        var form = document.querySelector("form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var search = form.querySelector("input[type=search]");
+            search.value = search.value;
+            form.submit();
+            onclick=document.getElementById('input-search').value = "";
+            
+        });
+    </script>
 </body>
 </html>
